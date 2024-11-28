@@ -1,0 +1,347 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="1152,3850.6666666666665" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugadf="clr-namespace:UiPath.GSuite.Activities.Drive.Filters;assembly=UiPath.GSuite.Activities" xmlns:ugage="clr-namespace:UiPath.GSuite.Activities.Gmail.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugagf="clr-namespace:UiPath.GSuite.Activities.Gmail.Filters;assembly=UiPath.GSuite.Activities" xmlns:ugagm="clr-namespace:UiPath.GSuite.Activities.Gmail.Models;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ugdm="clr-namespace:UiPath.GSuite.Drive.Models;assembly=UiPath.GSuite" xmlns:uggm="clr-namespace:UiPath.GSuite.Gmail.Models;assembly=UiPath.GSuite" xmlns:ugm="clr-namespace:UiPath.GSuite.Models;assembly=UiPath.GSuite" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uisad="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.DataExtraction;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uisascb="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.CustomGptDocumentType0078De725E26470481Cb3F3C4173864A.Bundle;assembly=CustomGptDocumentTyp.gNAX31iMT5N191fQG44N0pz" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.DocumentClassification</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Dom</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Classification</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Filters</x:String>
+      <x:String>UiPath.GSuite.Activities.Filters</x:String>
+      <x:String>UiPath.GSuite.Gmail.Enums</x:String>
+      <x:String>UiPath.GSuite.Models</x:String>
+      <x:String>UiPath.Shared.Api.Google.Gmail.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Shared.Api.Google.Gmail.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.GSuite</x:String>
+      <x:String>UiPath.GSuite.Gmail.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>UiPath.Platform</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Filters</x:String>
+      <x:String>UiPath.GSuite.Drive.Enums</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.DataExtraction</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.DataExtraction</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Results</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.ExtendedExtractionResultsForDocumentData._3949APreview.Bundle</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.CustomGptDocumentType055Bd4E10A7A4B508605Eceece98834E.Bundle</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.SWEntities.CustomGptDocumentType0078De725E26470481Cb3F3C4173864A.Bundle</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentProcessing.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>ExtendedExtractionRe.ghFda3fvPYC1smOc8yL8sf1</AssemblyReference>
+      <AssemblyReference>CustomGptDocumentTyp.cSa5I1cre0S1TFWxq12J28m3</AssemblyReference>
+      <AssemblyReference>CustomGptDocumentTyp.gNAX31iMT5N191fQG44N0pz</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="688,3786" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ugm:GmailMessage" Name="MailsWithAttachment" />
+      <Variable x:TypeArguments="uggm:GmailAttachmentLocalItem[]" Name="DownloadedAttachments" />
+      <Variable x:TypeArguments="ugdm:GDriveRemoteItem" Name="UploadedFile" />
+      <Variable x:TypeArguments="ugdm:GDriveRemoteItem[]" Name="RetrievedFiles" />
+      <Variable x:TypeArguments="x:String" Name="decision" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uga:GetNewestEmailConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID0}" ManualEntryFolder="{x:Null}" AllLabels="W3siSWQiOiJDSEFUIiwiTmFtZSI6IkNIQVQiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlNFTlQiLCJOYW1lIjoiU0VOVCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiSU5CT1giLCJOYW1lIjoiSU5CT1giLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IklNUE9SVEFOVCIsIk5hbWUiOiJJTVBPUlRBTlQiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlRSQVNIIiwiTmFtZSI6IlRSQVNIIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJEUkFGVCIsIk5hbWUiOiJEUkFGVCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiU1BBTSIsIk5hbWUiOiJTUEFNIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9GT1JVTVMiLCJOYW1lIjoiQ0FURUdPUllfRk9SVU1TIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9VUERBVEVTIiwiTmFtZSI6IkNBVEVHT1JZX1VQREFURVMiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IkNBVEVHT1JZX1BFUlNPTkFMIiwiTmFtZSI6IkNBVEVHT1JZX1BFUlNPTkFMIiwiVHlwZSI6InN5c3RlbSJ9LHsiSWQiOiJDQVRFR09SWV9QUk9NT1RJT05TIiwiTmFtZSI6IkNBVEVHT1JZX1BST01PVElPTlMiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IkNBVEVHT1JZX1NPQ0lBTCIsIk5hbWUiOiJDQVRFR09SWV9TT0NJQUwiLCJUeXBlIjoic3lzdGVtIn0seyJJZCI6IlNUQVJSRUQiLCJOYW1lIjoiU1RBUlJFRCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiVU5SRUFEIiwiTmFtZSI6IlVOUkVBRCIsIlR5cGUiOiJzeXN0ZW0ifSx7IklkIjoiTGFiZWxfMzE1ODc5NTgzMTM4ODQxNzc2MiIsIk5hbWUiOiJQZXJzb25hbCIsIlR5cGUiOiJ1c2VyIn0seyJJZCI6IkxhYmVsXzMzMzgyNTQzMzA3Nzk2Mjg5OTUiLCJOYW1lIjoiUlBBIFJlc3VtZXNcL1Nob3J0bGlzdGVkIiwiVHlwZSI6InVzZXIifSx7IklkIjoiTGFiZWxfMzc2MDgxMjI2NDk0MDIzMzUzMSIsIk5hbWUiOiJSUEEgUmVzdW1lc1wvTm9uLVNob3J0bGlzdGVkIiwiVHlwZSI6InVzZXIifSx7IklkIjoiTGFiZWxfNTQzNTg1NDkxNjYyNTM4NDU2IiwiTmFtZSI6IlJQQSBSZXN1bWVzIiwiVHlwZSI6InVzZXIifSx7IklkIjoiTGFiZWxfNzE2NzIyNTA1MTU0NDUwMDIyOSIsIk5hbWUiOiJMaW5rZWRJbiIsIlR5cGUiOiJ1c2VyIn1d" AuthScopesInvalid="False" BrowserFolder="Inbox" BrowserFolderLabelId="INBOX" ConnectionId="7eed7b16-3ada-4347-9ed7-184475ed1626" DisplayName="Get Newest Email" FolderInputSelectionMode="Browse" sap:VirtualizedContainerService.HintSize="626,248" sap2010:WorkflowViewState.IdRef="GetNewestEmailConnections_1" ImportantOnly="False" MarkAsRead="True" Result="[MailsWithAttachment]" StarredOnly="False" UnreadOnly="True" UseConnectionService="True" WithAttachmentsOnly="True">
+      <uga:GetNewestEmailConnections.Filter>
+        <ugagf:MailFilterCollection LogicalOperator="And">
+          <ugagf:MailFilterCollection.Filters>
+            <ugagf:MailFilterElement DateEqualsFilter="{x:Null}" Values="{x:Null}" CollectionFilterOperator="In" Criteria="Subject" DateOperator="NewerThan" StringOperator="Contains" Value="Application" />
+          </ugagf:MailFilterCollection.Filters>
+        </ugagf:MailFilterCollection>
+      </uga:GetNewestEmailConnections.Filter>
+      <uga:GetNewestEmailConnections.Folder>
+        <ugagm:FolderArgument ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" ManualEntryFolderName="{x:Null}" BrowserFolderId="INBOX" BrowserFolderName="Inbox" InputMode="Browse">
+          <ugagm:FolderArgument.Backup>
+            <usau:BackupSlot x:TypeArguments="ugage:FolderInputMode" x:Name="__ReferenceID0" StoredValue="Browse">
+              <usau:BackupSlot.BackupValues>
+                <scg:Dictionary x:TypeArguments="ugage:FolderInputMode, scg:List(x:Object)" />
+              </usau:BackupSlot.BackupValues>
+            </usau:BackupSlot>
+          </ugagm:FolderArgument.Backup>
+        </ugagm:FolderArgument>
+      </uga:GetNewestEmailConnections.Folder>
+    </uga:GetNewestEmailConnections>
+    <uga:DownloadAttachmentsConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" Filter="{x:Null}" FilterByFileNames="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" ConnectionId="7eed7b16-3ada-4347-9ed7-184475ed1626" DisplayName="Download Email Attachments" Email="[MailsWithAttachment]" ExcludeInlineAttachments="False" sap:VirtualizedContainerService.HintSize="626,247.33333333333334" sap2010:WorkflowViewState.IdRef="DownloadAttachmentsConnections_1" NewResult="[DownloadedAttachments]" SearchMode="UseSimple" UseConnectionService="True" />
+    <uga:UploadFilesConnections AllResults="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DestinationFolder="{x:Null}" FilesList="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID1}" ManualFolderId="{x:Null}" OverwriteExistingFile="{x:Null}" SingleFileToUpload="{x:Null}" AuthScopesInvalid="False" BrowseFolderId="https://drive.google.com/drive/folders/1AOsEywsFOXCtU5KNXcaD1y5wXOjsLOjj" ConflictResolution="Replace" ConnectionId="bd3ef1e5-89f4-4114-aabf-ecf188777871" Convert="False" DisplayName="Upload Files" FilesInputMode="MultipleByVariable" FirstResult="[UploadedFile]" FolderInputMode="Browse" sap:VirtualizedContainerService.HintSize="626,247.33333333333334" sap2010:WorkflowViewState.IdRef="UploadFilesConnections_1" MultipleFilesToUpload="[DownloadedAttachments]" SaveToFolderName="RPA Resumes" UseConnectionService="True">
+      <uga:UploadFilesConnections.FilesBackup>
+        <usau:BackupSlot x:TypeArguments="ugade:FilesInputMode" StoredValue="MultipleByVariable">
+          <usau:BackupSlot.BackupValues>
+            <scg:Dictionary x:TypeArguments="ugade:FilesInputMode, scg:List(x:Object)" />
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </uga:UploadFilesConnections.FilesBackup>
+      <uga:UploadFilesConnections.Folder>
+        <ugam:DriveItemArgument ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://drive.google.com/drive/folders/1AOsEywsFOXCtU5KNXcaD1y5wXOjsLOjj" ConnectionKey="bd3ef1e5-89f4-4114-aabf-ecf188777871" FriendlyName="RPA Resumes" FullPathHint="My Drive/RPA Resumes" InputMode="Browse">
+          <ugam:DriveItemArgument.Backup>
+            <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="Browse">
+              <usau:BackupSlot.BackupValues>
+                <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+              </usau:BackupSlot.BackupValues>
+            </usau:BackupSlot>
+          </ugam:DriveItemArgument.Backup>
+        </ugam:DriveItemArgument>
+      </uga:UploadFilesConnections.Folder>
+    </uga:UploadFilesConnections>
+    <uga:GetFileListConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ManualEntryLocation="{x:Null}" AllLabels="W10=" AuthScopesInvalid="False" BrowserLocation="https://drive.google.com/drive/folders/1AOsEywsFOXCtU5KNXcaD1y5wXOjsLOjj" ConnectionId="bd3ef1e5-89f4-4114-aabf-ecf188777871" DisplayName="Get File or Folder List" sap:VirtualizedContainerService.HintSize="626,194.66666666666666" sap2010:WorkflowViewState.IdRef="GetFileListConnections_1" LocationFriendlyName="RPA Resumes" LocationInputMode="Browse" MaxResults="200" Result="[RetrievedFiles]" StarredOnly="False" UseConnectionService="True" WhatToReturn="Files">
+      <uga:GetFileListConnections.Filter>
+        <ugadf:FileFilterArgument LogicalOperator="And">
+          <ugadf:FileFilterArgument.Filters>
+            <ugadf:SingleFileFilterArgument DateValue="{x:Null}" Values="{x:Null}" Criteria="Name" DateOperator="NewerThan" FileType="GoogleDocs" OwnerOperator="In" StringOperator="Contains" TextOperator="Contains" TypeOperator="Equals" Value="[DownloadedAttachments.FirstOrDefault.Name]" />
+          </ugadf:FileFilterArgument.Filters>
+        </ugadf:FileFilterArgument>
+      </uga:GetFileListConnections.Filter>
+      <uga:GetFileListConnections.FolderIdBackup>
+        <usau:BackupSlot x:TypeArguments="ugade:EDriveMode" StoredValue="Browse">
+          <usau:BackupSlot.BackupValues>
+            <scg:Dictionary x:TypeArguments="ugade:EDriveMode, scg:List(x:Object)" />
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </uga:GetFileListConnections.FolderIdBackup>
+      <uga:GetFileListConnections.Item>
+        <ugam:DriveItemArgument ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://drive.google.com/drive/folders/1AOsEywsFOXCtU5KNXcaD1y5wXOjsLOjj" FriendlyName="RPA Resumes" FullPathHint="My Drive/RPA Resumes" InputMode="Browse">
+          <ugam:DriveItemArgument.Backup>
+            <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" StoredValue="{x:Null}">
+              <usau:BackupSlot.BackupValues>
+                <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+              </usau:BackupSlot.BackupValues>
+            </usau:BackupSlot>
+          </ugam:DriveItemArgument.Backup>
+        </ugam:DriveItemArgument>
+      </uga:GetFileListConnections.Item>
+    </uga:GetFileListConnections>
+    <ui:ForEach x:TypeArguments="ugdm:GDriveRemoteItem" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="626,2760.6666666666665" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[RetrievedFiles]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="ugdm:GDriveRemoteItem">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ugdm:GDriveRemoteItem" Name="currentGDriveRemoteItem" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="592,2570" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="uisad:IDocumentData(uisascb:CustomGptDocumentType0078De725E26470481Cb3F3C4173864A)" Name="resumeData" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <p:ExtractDocumentDataWithDocumentData x:TypeArguments="uisascb:CustomGptDocumentType0078De725E26470481Cb3F3C4173864A" DocumentBounds="{x:Null}" DocumentObjectModel="{x:Null}" DocumentPath="{x:Null}" DocumentText="{x:Null}" ExtractorDocumentType="{x:Null}" ExtractorResult="{x:Null}" PersistenceId="{x:Null}" PredictionId="{x:Null}" Prompt="{x:Null}" ApplyAutoValidation="False" DisplayName="Extract Document Data" DocType="generative_extractor" ExtractionResults="[resumeData]" FileInput="[currentGDriveRemoteItem]" GenerateData="True" sap:VirtualizedContainerService.HintSize="530,290.6666666666667" sap2010:WorkflowViewState.IdRef="ExtractDocumentDataWithDocumentData`1_1" ProjectId="00000000-0000-0000-0000-000000000000" TimeoutInSeconds="3600">
+              <p:ExtractDocumentDataWithDocumentData.AutoValidationConfidenceThreshold>
+                <InArgument x:TypeArguments="s:Nullable(x:Int32)">
+                  <Literal x:TypeArguments="s:Nullable(x:Int32)" Value="0" />
+                </InArgument>
+              </p:ExtractDocumentDataWithDocumentData.AutoValidationConfidenceThreshold>
+              <p:ExtractDocumentDataWithDocumentData.GptPromptWithVariables>
+                <InArgument x:TypeArguments="x:String" x:Key="SKILL">Extract all the details listed under the 'Skills' or 'Key Skills' section of the document. These may include technical skills, programming languages, tools, frameworks, or soft skills. Ensure you retrieve all relevant details, regardless of their format, bullet points, or free text descriptions</InArgument>
+              </p:ExtractDocumentDataWithDocumentData.GptPromptWithVariables>
+            </p:ExtractDocumentDataWithDocumentData>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="530,132" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[resumeData.ToString]" />
+            <If Condition="[(resumeData.ToString().ToLower().Contains(&quot;java&quot;) Or resumeData.ToString().ToLower().Contains(&quot;c&quot;) Or resumeData.ToString().ToLower().Contains(&quot;python&quot;)) And (resumeData.ToString().ToLower().Contains(&quot;html&quot;) Or resumeData.ToString().ToLower().Contains(&quot;css&quot;) Or resumeData.ToString().ToLower().Contains(&quot;javascript&quot;)) And (resumeData.ToString().ToLower().Contains(&quot;sql&quot;) Or resumeData.ToString().ToLower().Contains(&quot;mysql&quot;) Or resumeData.ToString().ToLower().Contains(&quot;postgresql&quot;) Or resumeData.ToString().ToLower().Contains(&quot;mongodb&quot;) Or resumeData.ToString().ToLower().Contains(&quot;cassandra&quot;))]" sap:VirtualizedContainerService.HintSize="530,565.3333333333334" sap2010:WorkflowViewState.IdRef="If_2">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,192.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[decision]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">yes</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="496,192.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[decision]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">no</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[decision = &quot;yes&quot;]" sap:VirtualizedContainerService.HintSize="530,1497.3333333333333" sap2010:WorkflowViewState.IdRef="If_3">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,667.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uga:ReplyToEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" NewSubject="{x:Null}" SingleAttachment="{x:Null}" To="{x:Null}" AttachmentInputMode="UseExisting" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Dear Candidate,&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Congratulations! You have been shortlisted for the role. Our hiring team will contact you soon with further details.&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Thanks &amp;amp; Regards,&#xA;Hiring Team.&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" ConnectionId="7eed7b16-3ada-4347-9ed7-184475ed1626" DisplayName="Reply to Email" Email="[MailsWithAttachment]" sap:VirtualizedContainerService.HintSize="354,352.6666666666667" sap2010:WorkflowViewState.IdRef="ReplyToEmailConnections_1" Importance="Normal" ReplyToAll="True" SaveAsDraft="False" UseConnectionService="True">
+                    <uga:ReplyToEmailConnections.AttachmentsBackup>
+                      <usau:BackupSlot x:TypeArguments="ugage:AttachmentInputMode" StoredValue="UseExisting">
+                        <usau:BackupSlot.BackupValues>
+                          <scg:Dictionary x:TypeArguments="ugage:AttachmentInputMode, scg:List(x:Object)" />
+                        </usau:BackupSlot.BackupValues>
+                      </usau:BackupSlot>
+                    </uga:ReplyToEmailConnections.AttachmentsBackup>
+                  </uga:ReplyToEmailConnections>
+                  <uga:MoveEmailConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID2}" ManualFolderPath="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" BrowseFolderPath="RPA Resumes/Shortlisted" BrowserFolderLabelId="Label_3338254330779628995" ConnectionId="7eed7b16-3ada-4347-9ed7-184475ed1626" DisplayName="Move Email" Email="[MailsWithAttachment]" FolderInputSelectionMode="Browse" sap:VirtualizedContainerService.HintSize="354,230" sap2010:WorkflowViewState.IdRef="MoveEmailConnections_1" UseConnectionService="True">
+                    <uga:MoveEmailConnections.Folder>
+                      <ugagm:FolderArgument ConnectionDescriptor="{x:Null}" ManualEntryFolderName="{x:Null}" BrowserFolderId="Label_3338254330779628995" BrowserFolderName="RPA Resumes/Shortlisted" ConnectionKey="7eed7b16-3ada-4347-9ed7-184475ed1626" InputMode="Browse">
+                        <ugagm:FolderArgument.Backup>
+                          <usau:BackupSlot x:TypeArguments="ugage:FolderInputMode" x:Name="__ReferenceID2" StoredValue="Browse">
+                            <usau:BackupSlot.BackupValues>
+                              <scg:Dictionary x:TypeArguments="ugage:FolderInputMode, scg:List(x:Object)" />
+                            </usau:BackupSlot.BackupValues>
+                          </usau:BackupSlot>
+                        </ugagm:FolderArgument.Backup>
+                      </ugagm:FolderArgument>
+                    </uga:MoveEmailConnections.Folder>
+                  </uga:MoveEmailConnections>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,667.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uga:ReplyToEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" NewSubject="{x:Null}" SingleAttachment="{x:Null}" To="{x:Null}" AttachmentInputMode="UseExisting" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Dear Candidate,&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;I appreciate your interest in our company. Unfortunately, we are unable to move forward with your application this time. We appreciate your interest and wish you success in your job search.&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Thanks &amp;amp; Regards,&#xA;Hiring Team.&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" ConnectionId="7eed7b16-3ada-4347-9ed7-184475ed1626" DisplayName="Reply to Email" Email="[MailsWithAttachment]" sap:VirtualizedContainerService.HintSize="354,352.6666666666667" sap2010:WorkflowViewState.IdRef="ReplyToEmailConnections_2" Importance="Normal" ReplyToAll="True" SaveAsDraft="False" UseConnectionService="True">
+                    <uga:ReplyToEmailConnections.AttachmentsBackup>
+                      <usau:BackupSlot x:TypeArguments="ugage:AttachmentInputMode" StoredValue="UseExisting">
+                        <usau:BackupSlot.BackupValues>
+                          <scg:Dictionary x:TypeArguments="ugage:AttachmentInputMode, scg:List(x:Object)" />
+                        </usau:BackupSlot.BackupValues>
+                      </usau:BackupSlot>
+                    </uga:ReplyToEmailConnections.AttachmentsBackup>
+                  </uga:ReplyToEmailConnections>
+                  <uga:MoveEmailConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID3}" ManualFolderPath="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" BrowseFolderPath="RPA Resumes/Non-Shortlisted" BrowserFolderLabelId="Label_3760812264940233531" ConnectionId="7eed7b16-3ada-4347-9ed7-184475ed1626" DisplayName="Move Email" Email="[MailsWithAttachment]" FolderInputSelectionMode="Browse" sap:VirtualizedContainerService.HintSize="354,230" sap2010:WorkflowViewState.IdRef="MoveEmailConnections_2" UseConnectionService="True">
+                    <uga:MoveEmailConnections.Folder>
+                      <ugagm:FolderArgument ConnectionDescriptor="{x:Null}" ManualEntryFolderName="{x:Null}" BrowserFolderId="Label_3760812264940233531" BrowserFolderName="RPA Resumes/Non-Shortlisted" ConnectionKey="7eed7b16-3ada-4347-9ed7-184475ed1626" InputMode="Browse">
+                        <ugagm:FolderArgument.Backup>
+                          <usau:BackupSlot x:TypeArguments="ugage:FolderInputMode" x:Name="__ReferenceID3" StoredValue="Browse">
+                            <usau:BackupSlot.BackupValues>
+                              <scg:Dictionary x:TypeArguments="ugage:FolderInputMode, scg:List(x:Object)" />
+                            </usau:BackupSlot.BackupValues>
+                          </usau:BackupSlot>
+                        </ugagm:FolderArgument.Backup>
+                      </ugagm:FolderArgument>
+                    </uga:MoveEmailConnections.Folder>
+                  </uga:MoveEmailConnections>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>

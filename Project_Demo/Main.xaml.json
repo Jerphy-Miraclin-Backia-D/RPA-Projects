@@ -1,0 +1,93 @@
+{
+  "DisplayName": "Main",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "GetNewestEmailConnections_1_Connection0",
+      "DisplayName": "GetNewestEmailConnections_1_Connection",
+      "Category": null,
+      "Tooltip": "Get Newest Email",
+      "Placeholder": null,
+      "Widget": "Connection",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 1,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "GetNewestEmailConnections_1_Connection0_Property0_Metadata",
+      "DisplayName": "GetNewestEmailConnections_1_Email folder or label",
+      "Category": null,
+      "Tooltip": "Get Newest Email",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 2,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "GetNewestEmailConnections_1_Connection0_Property1_Metadata",
+      "DisplayName": "MoveEmailConnections_1_To email folder or label",
+      "Category": null,
+      "Tooltip": "Move Email",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 2,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "GetNewestEmailConnections_1_Connection0_Property2_Metadata",
+      "DisplayName": "MoveEmailConnections_2_To email folder or label",
+      "Category": null,
+      "Tooltip": "Move Email",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 2,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "UploadFilesConnections_1_Connection1",
+      "DisplayName": "UploadFilesConnections_1_Connection",
+      "Category": null,
+      "Tooltip": "Upload Files",
+      "Placeholder": null,
+      "Widget": "Connection",
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 1,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "UploadFilesConnections_1_Connection1_Property0_Metadata",
+      "DisplayName": "UploadFilesConnections_1_Destination folder",
+      "Category": null,
+      "Tooltip": "Upload Files",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 2,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "UploadFilesConnections_1_Connection1_Property1_Metadata",
+      "DisplayName": "GetFileListConnections_1_In location",
+      "Category": null,
+      "Tooltip": "Get File or Folder List",
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": true,
+      "IsPrincipal": true,
+      "ArgumentType": 2,
+      "DataSourceItems": null
+    }
+  ]
+}
